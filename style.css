@@ -337,7 +337,17 @@ section {
     color: #3498db;
 }
 
+/* Experience Section */
+.experience {
+    background-color: #ffffff;
+}
+
 /* Education Section */
+.education {
+    background-color: #f8f9fa;
+}
+
+/* Timeline (shared by Experience and Education) */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -434,9 +444,29 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.achievements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievements ul li {
+    color: #555;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.achievements ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
 /* Projects Section */
 .projects {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .projects-grid {
@@ -542,6 +572,10 @@ section {
 }
 
 /* Skills Section */
+.skills {
+    background-color: #f8f9fa;
+}
+
 .skills-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -591,7 +625,7 @@ section {
 
 /* Achievements Section */
 .achievements {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .achievements-grid {
@@ -660,6 +694,10 @@ section {
 }
 
 /* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -686,7 +724,7 @@ section {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: #f8f9fa;
+    background: white;
     border-radius: 10px;
 }
 
@@ -712,7 +750,7 @@ section {
 }
 
 .references {
-    background: #f8f9fa;
+    background: white;
     padding: 2rem;
     border-radius: 15px;
 }
