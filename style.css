@@ -430,6 +430,14 @@ section {
     border-radius: 16px;
     border: 1px solid var(--glass-border);
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.info-item span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    word-break: break-all;
 }
 
 .info-item:hover {
@@ -517,6 +525,10 @@ section {
     background: var(--glass-border);
 }
 
+.education .timeline::before {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .timeline-item {
     position: relative;
     margin-bottom: 4rem;
@@ -531,9 +543,16 @@ section {
     height: 16px;
     background: var(--primary-color);
     border-radius: 50%;
-    border: 4px solid var(--bg-color);
     z-index: 2;
     box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.experience .timeline-dot {
+    border: 4px solid var(--bg-color);
+}
+
+.education .timeline-dot {
+    border: 4px solid var(--surface-color);
 }
 
 .timeline-date {
@@ -907,16 +926,7 @@ section {
     margin: 0 auto;
 }
 
-.skill-category {
-    margin-bottom: 3rem;
-}
 
-.skill-category h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--text-primary);
-    margin-bottom: 3rem;
-}
 
 .skills-grid {
     display: grid;
@@ -933,11 +943,131 @@ section {
     transition: all 0.3s ease;
 }
 
+.skill-item:hover i {
+    transform: scale(1.1);
+}
+
+/* Individual Brand Hover Effects */
+.skill-node:hover i {
+    color: #68A063;
+}
+
+.skill-node:hover {
+    border-color: #68A063;
+    box-shadow: 0 0 20px rgba(104, 160, 99, 0.2);
+}
+
+.skill-next:hover i {
+    color: #ffffff;
+}
+
+.skill-next:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.skill-python:hover i {
+    color: #3776AB;
+}
+
+.skill-python:hover {
+    border-color: #3776AB;
+    box-shadow: 0 0 20px rgba(55, 118, 171, 0.2);
+}
+
+.skill-cpp:hover i {
+    color: #00599C;
+}
+
+.skill-cpp:hover {
+    border-color: #00599C;
+    box-shadow: 0 0 20px rgba(0, 89, 156, 0.2);
+}
+
+.skill-java:hover i {
+    color: #007396;
+}
+
+.skill-java:hover {
+    border-color: #007396;
+    box-shadow: 0 0 20px rgba(0, 115, 150, 0.2);
+}
+
+.skill-kotlin:hover i {
+    color: #7F52FF;
+}
+
+.skill-kotlin:hover {
+    border-color: #7F52FF;
+    box-shadow: 0 0 20px rgba(127, 82, 255, 0.2);
+}
+
+.skill-flutter:hover i {
+    color: #02569B;
+}
+
+.skill-flutter:hover {
+    border-color: #02569B;
+    box-shadow: 0 0 20px rgba(2, 86, 155, 0.2);
+}
+
+.skill-js:hover i {
+    color: #F7DF1E;
+}
+
+.skill-js:hover {
+    border-color: #F7DF1E;
+    box-shadow: 0 0 20px rgba(247, 223, 30, 0.2);
+}
+
+.skill-sql:hover i {
+    color: #336791;
+}
+
+.skill-sql:hover {
+    border-color: #336791;
+    box-shadow: 0 0 20px rgba(51, 103, 145, 0.2);
+}
+
+.skill-html:hover i {
+    color: #E34F26;
+}
+
+.skill-html:hover {
+    border-color: #E34F26;
+    box-shadow: 0 0 20px rgba(227, 79, 38, 0.2);
+}
+
+.skill-css:hover i {
+    color: #1572B6;
+}
+
+.skill-css:hover {
+    border-color: #1572B6;
+    box-shadow: 0 0 20px rgba(21, 114, 182, 0.2);
+}
+
+.skill-mongodb:hover i {
+    color: #47A248;
+}
+
+.skill-mongodb:hover {
+    border-color: #47A248;
+    box-shadow: 0 0 20px rgba(71, 162, 72, 0.2);
+}
+
+.skill-react:hover i {
+    color: #61DAFB;
+}
+
+.skill-react:hover {
+    border-color: #61DAFB;
+    box-shadow: 0 0 20px rgba(97, 218, 251, 0.2);
+}
+
 .skill-item:hover {
-    border-color: var(--primary-color);
     transform: translateY(-8px);
     background: var(--surface-hover);
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
 }
 
 .skill-item i {
@@ -1044,6 +1174,7 @@ section {
     gap: 1.5rem;
     padding: 1.5rem;
     border-radius: 16px;
+    overflow: hidden;
 }
 
 .contact-item i {
@@ -1065,6 +1196,7 @@ section {
 
 .contact-item p {
     color: var(--text-secondary);
+    word-break: break-all;
 }
 
 .references {
