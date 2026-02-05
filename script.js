@@ -1,25 +1,25 @@
 // Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
     // Toggle mobile menu
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function () {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
 
     // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
         });
     });
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
@@ -42,10 +42,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Active Navigation Link Highlighting
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -64,7 +64,7 @@ window.addEventListener('scroll', function() {
 });
 
 // Navbar Background on Scroll
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
@@ -79,7 +79,7 @@ window.addEventListener('scroll', function() {
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
-    
+
     function type() {
         if (i < text.length) {
             element.innerHTML += text.charAt(i);
@@ -87,16 +87,16 @@ function typeWriter(element, text, speed = 100) {
             setTimeout(type, speed);
         }
     }
-    
+
     type();
 }
 
 // Initialize typing animation when page loads (disabled to preserve HTML formatting)
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     // Typing animation disabled to preserve HTML span tags
     // const heroTitle = document.querySelector('.hero-title');
     // const originalText = heroTitle.innerHTML;
-    
+
     // Add a slight delay before starting the animation
     // setTimeout(() => {
     //     typeWriter(heroTitle, originalText, 50);
@@ -126,11 +126,11 @@ function createScrollToTopButton() {
         z-index: 1000;
         box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
     `;
-    
+
     document.body.appendChild(scrollButton);
-    
+
     // Show/hide scroll button
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             scrollButton.style.opacity = '1';
             scrollButton.style.visibility = 'visible';
@@ -139,22 +139,22 @@ function createScrollToTopButton() {
             scrollButton.style.visibility = 'hidden';
         }
     });
-    
+
     // Scroll to top functionality
-    scrollButton.addEventListener('click', function() {
+    scrollButton.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
-    
+
     // Hover effects
-    scrollButton.addEventListener('mouseenter', function() {
+    scrollButton.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-3px)';
         this.style.boxShadow = '0 10px 25px rgba(52, 152, 219, 0.4)';
     });
-    
-    scrollButton.addEventListener('mouseleave', function() {
+
+    scrollButton.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0)';
         this.style.boxShadow = '0 5px 15px rgba(52, 152, 219, 0.3)';
     });
@@ -169,7 +169,7 @@ const observerOptions = {
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
+const observer = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
@@ -179,11 +179,11 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe elements for animation
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     const animatedElements = document.querySelectorAll(
-        '.timeline-item, .project-card, .skill-item, .achievement-card, .contact-item'
+        '.hero-content, .hero-image, .timeline-item, .project-card, .highlight-card, .skill-item, .achievement-card, .contact-item'
     );
-    
+
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -209,7 +209,7 @@ function showLoadingAnimation() {
         z-index: 9999;
         transition: opacity 0.5s ease;
     `;
-    
+
     loader.innerHTML = `
         <div style="text-align: center;">
             <div style="
@@ -224,7 +224,7 @@ function showLoadingAnimation() {
             <p style="color: #3498db; font-weight: 600;">Loading Portfolio...</p>
         </div>
     `;
-    
+
     // Add keyframe animation
     const style = document.createElement('style');
     style.textContent = `
@@ -234,11 +234,11 @@ function showLoadingAnimation() {
         }
     `;
     document.head.appendChild(style);
-    
+
     document.body.appendChild(loader);
-    
+
     // Hide loader when page is loaded
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         setTimeout(() => {
             loader.style.opacity = '0';
             setTimeout(() => {
@@ -301,16 +301,16 @@ function addPrintButton() {
         font-size: 0.9rem;
         padding: 10px 15px;
     `;
-    
+
     printBtn.addEventListener('click', printResume);
     document.body.appendChild(printBtn);
-    
+
     // Hide print button on mobile
     if (window.innerWidth <= 768) {
         printBtn.style.display = 'none';
     }
-    
-    window.addEventListener('resize', function() {
+
+    window.addEventListener('resize', function () {
         if (window.innerWidth <= 768) {
             printBtn.style.display = 'none';
         } else {
@@ -328,7 +328,7 @@ function copyToClipboard(text, element) {
         const originalText = element.innerHTML;
         element.innerHTML = '<i class="fas fa-check"></i> Copied!';
         element.style.color = '#27ae60';
-        
+
         setTimeout(() => {
             element.innerHTML = originalText;
             element.style.color = '';
@@ -337,17 +337,17 @@ function copyToClipboard(text, element) {
 }
 
 // Add copy functionality to contact details
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const emailElements = document.querySelectorAll('[href^="mailto:"]');
     const phoneElements = document.querySelectorAll('a[href^="tel:"], .contact-item:has(.fa-phone) p');
-    
+
     // Make contact info clickable for copying
     document.querySelectorAll('.contact-item p').forEach(p => {
         if (p.textContent.includes('@') || p.textContent.includes('+60')) {
             p.style.cursor = 'pointer';
             p.title = 'Click to copy';
-            
-            p.addEventListener('click', function() {
+
+            p.addEventListener('click', function () {
                 copyToClipboard(this.textContent, this);
             });
         }

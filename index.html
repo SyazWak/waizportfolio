@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhamad Waiz Syazwan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -20,6 +23,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#education" class="nav-link">Education</a>
+                <a href="#highlight-project" class="nav-link">Featured</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -35,25 +39,29 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
+            <div class="hero-image">
+                <img src="profile-photo.jpg" alt="Muhamad Waiz Syazwan - Profile Photo" class="hero-profile-img">
+            </div>
             <div class="hero-content">
                 <h1 class="hero-title">
                     Hi, I'm <span class="highlight">Muhamad Waiz Syazwan</span>
                 </h1>
                 <p class="hero-subtitle">AI/RPA Intern & Computer Science Graduate</p>
                 <p class="hero-description">
-                    Passionate about Software Development, AI, Machine Learning, and Automation. 
+                    Passionate about Software Development, AI, Machine Learning, and Automation.
                     Currently an AI/RPA Intern at TP Malaysia, focusing on Power Platform automation and AI solutions.
                     Bachelor's in Computer Science graduate from UiTM with a CGPA of 3.87.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    <a href="#highlight-project" class="btn btn-secondary">View My Work</a>
                 </div>
                 <div class="social-links">
                     <a href="mailto:muhdwaiz200@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/muhamad-waiz-syazwan-bin-abdul-manap-3a2420237" class="social-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/muhamad-waiz-syazwan-bin-abdul-manap-3a2420237"
+                        class="social-link" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/SyazWak" class="social-link" target="_blank">
@@ -68,20 +76,18 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="profile-photo.jpg" alt="Muhamad Waiz Syazwan - Profile Photo" class="profile-img">
-                </div>
+            <div class="about-content no-image">
                 <div class="about-text">
                     <p>
-                        I am a Bachelor of Computer Science (Honors) graduate from Universiti Teknologi MARA (UiTM) 
-                        with a CGPA of 3.87. Currently working as an AI/RPA Intern at TP Malaysia, where I develop 
+                        I am a Bachelor of Computer Science (Honors) graduate from Universiti Teknologi MARA (UiTM)
+                        with a CGPA of 3.87. Currently working as an AI/RPA Intern at TP Malaysia, where I develop
                         Power Automate workflows and AI copilot chatbots using Copilot Studio.
                     </p>
                     <p>
-                        With hands-on experience in mobile and web development, image processing, and Microsoft Power 
-                        Platform automation, I am seeking opportunities as a Software/Web/Mobile Developer or AI and 
-                        Automation Engineer to apply my strong engineering fundamentals and practical project experience.
+                        With hands-on experience in mobile and web development, image processing, and Microsoft Power
+                        Platform automation, I am seeking opportunities as a Software/Web/Mobile Developer or AI and
+                        Automation Engineer to apply my strong engineering fundamentals and practical project
+                        experience.
                     </p>
                     <div class="about-info">
                         <div class="info-item">
@@ -127,11 +133,15 @@
                         <div class="achievements">
                             <h5>Key Responsibilities:</h5>
                             <ul>
-                                <li>Developed and maintained Power Automate workflows to automate internal business processes</li>
-                                <li>Built and deployed AI copilot chatbots using Copilot Studio integrated with Power Automate</li>
-                                <li>Integrated automation solutions with Microsoft 365 services (SharePoint, Teams, Outlook, Excel)</li>
+                                <li>Developed and maintained Power Automate workflows to automate internal business
+                                    processes</li>
+                                <li>Built and deployed AI copilot chatbots using Copilot Studio integrated with Power
+                                    Automate</li>
+                                <li>Integrated automation solutions with Microsoft 365 services (SharePoint, Teams,
+                                    Outlook, Excel)</li>
                                 <li>Automated approval and scheduling workflows to reduce manual effort</li>
-                                <li>Worked with stakeholders to gather requirements and deliver scalable automation solutions</li>
+                                <li>Worked with stakeholders to gather requirements and deliver scalable automation
+                                    solutions</li>
                             </ul>
                         </div>
                     </div>
@@ -177,6 +187,66 @@
         </div>
     </section>
 
+    <!-- Highlight Project Section -->
+    <section id="highlight-project" class="highlight-project">
+        <div class="container">
+            <h2 class="section-title">Featured Project</h2>
+            <div class="highlight-card">
+                <div class="highlight-content">
+                    <div class="highlight-header">
+                        <h3>SW Loyalty Ecosystem</h3>
+                        <span class="project-date">2026</span>
+                    </div>
+                    <p class="highlight-description">
+                        An enterprise-grade loyalty management suite featuring a sophisticated multi-app architecture.
+                        It utilizes <strong>Flutter</strong> for high-performance mobile apps (Customer & Staff) with
+                        <strong>Material 3</strong> design,
+                        and <strong>Next.js</strong> for a data-driven Admin Dashboards. Secures data using
+                        <strong>PostgreSQL RLS</strong>
+                        and provides real-time updates via <strong>Supabase</strong> WebSockets and
+                        <strong>Firebase</strong> Push Notifications.
+                    </p>
+                    <div class="highlight-features">
+                        <div class="feature-item">
+                            <i class="fas fa-qrcode"></i>
+                            <span>Secure QR Earn & Redeem</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sync"></i>
+                            <span>Real-time Sync (Supabase)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Multi-App Architecture</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Industrial Grade Security</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://syazwak.github.io/LoyaltySystemWebsite/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Visit Loyalty System Website
+                        </a>
+                    </div>
+                </div>
+                <div class="highlight-visual">
+                    <div class="visual-placeholder">
+                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -188,8 +258,8 @@
                         <span class="project-date">Dec 2025</span>
                     </div>
                     <p class="project-description">
-                        A multilingual AI-powered HR chatbot built using Microsoft Copilot Studio to handle employee 
-                        queries on policies, payroll, leave, and ticket submission, improving response accuracy and 
+                        A multilingual AI-powered HR chatbot built using Microsoft Copilot Studio to handle employee
+                        queries on policies, payroll, leave, and ticket submission, improving response accuracy and
                         accessibility.
                     </p>
                     <div class="project-tech">
@@ -207,8 +277,8 @@
                         <span class="project-date">Dec 2025</span>
                     </div>
                     <p class="project-description">
-                        An end-to-end recruitment automation solution that streamlines the Refer-A-Friend Plus (RAF+) 
-                        process, including a web-based referral submission portal and automated candidate profile 
+                        An end-to-end recruitment automation solution that streamlines the Refer-A-Friend Plus (RAF+)
+                        process, including a web-based referral submission portal and automated candidate profile
                         creation in ICIMS, reducing processing time from ~15–20 minutes to under 2 minutes.
                     </p>
                     <div class="project-tech">
@@ -227,8 +297,8 @@
                         <span class="project-date">May - July 2025</span>
                     </div>
                     <p class="project-description">
-                        A Flutter-based mobile app using TensorFlow Lite to assist colorblind individuals 
-                        through real-time color detection, adaptive color correction, and interactive learning games, 
+                        A Flutter-based mobile app using TensorFlow Lite to assist colorblind individuals
+                        through real-time color detection, adaptive color correction, and interactive learning games,
                         enhancing daily color accessibility and recognition.
                     </p>
                     <div class="project-tech">
@@ -241,7 +311,8 @@
                         <a href="https://syazwak.github.io/colorwise-website/" class="project-link" target="_blank">
                             <i class="fas fa-globe"></i> Website
                         </a>
-                        <a href="https://drive.google.com/file/d/1VNORxNDkH0ek_t7WsE7PC4Fu5KwjRcB-/view?usp=sharing" class="project-link" target="_blank">
+                        <a href="https://drive.google.com/file/d/1VNORxNDkH0ek_t7WsE7PC4Fu5KwjRcB-/view?usp=sharing"
+                            class="project-link" target="_blank">
                             <i class="fab fa-android"></i> Download APK
                         </a>
                     </div>
@@ -254,8 +325,9 @@
                         <span class="project-date">Group Project</span>
                     </div>
                     <p class="project-description">
-                        An AI-powered web application that recognizes Malaysian food dishes using machine learning. 
-                        Built with Streamlit for easy deployment and user interaction, helping users identify traditional Malaysian cuisine.
+                        An AI-powered web application that recognizes Malaysian food dishes using machine learning.
+                        Built with Streamlit for easy deployment and user interaction, helping users identify
+                        traditional Malaysian cuisine.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -280,7 +352,7 @@
                         <span class="project-date">Side Project</span>
                     </div>
                     <p class="project-description">
-                        An intelligent resume analysis tool that uses AI to evaluate resumes, provide feedback, 
+                        An intelligent resume analysis tool that uses AI to evaluate resumes, provide feedback,
                         and suggest improvements. Built with Streamlit for an interactive user experience.
                     </p>
                     <div class="project-tech">
@@ -306,7 +378,7 @@
                         <span class="project-date">Jan - Feb 2025</span>
                     </div>
                     <p class="project-description">
-                        A mobile project for learning Bahasa Melayu for entry level communication, 
+                        A mobile project for learning Bahasa Melayu for entry level communication,
                         designed to help beginners learn the language effectively.
                     </p>
                     <div class="project-tech">
@@ -323,7 +395,7 @@
                         <span class="project-date">Jan 2025</span>
                     </div>
                     <p class="project-description">
-                        This project aims to detect whether the driver is drowsy by detecting their eyes 
+                        This project aims to detect whether the driver is drowsy by detecting their eyes
                         using machine learning and computer vision techniques with YOLOv8.
                     </p>
                     <div class="project-tech">
@@ -341,7 +413,7 @@
                         <span class="project-date">July 2024</span>
                     </div>
                     <p class="project-description">
-                        A website system for theme park reservation like the Escape website, 
+                        A website system for theme park reservation like the Escape website,
                         allowing users to book and manage their theme park visits with an intuitive interface.
                     </p>
                     <div class="project-tech">
@@ -443,12 +515,13 @@
                     <h3>Silver Medalist, INDES 2025</h3>
                     <p class="achievement-date">June 2025</p>
                     <p>
-                        Awarded Silver Medal in the Science, Engineering and Technology category for the project 
+                        Awarded Silver Medal in the Science, Engineering and Technology category for the project
                         "PAPA: A RAG-BASED AI ASSISTANT FOR INCLUSIVE ACADEMIC PLANNING" at INDES 2025.
                     </p>
-                    <span class="achievement-category">Innovation, Design & Exhibition Showcase - UiTM Seri Iskandar</span>
+                    <span class="achievement-category">Innovation, Design & Exhibition Showcase - UiTM Seri
+                        Iskandar</span>
                 </div>
-                
+
                 <div class="achievement-card">
                     <div class="achievement-icon">
                         <i class="fas fa-microphone"></i>
@@ -456,12 +529,12 @@
                     <h3>AI Seminar 2025: Frontiers in AI</h3>
                     <p class="achievement-date">17 Jan 2025</p>
                     <p>
-                        Technical Member for seminar exploring the latest trends in Artificial Intelligence 
+                        Technical Member for seminar exploring the latest trends in Artificial Intelligence
                         and its diverse applications. Collaborated with team members to ensure smooth execution.
                     </p>
                     <span class="achievement-category">UiTM Tapah</span>
                 </div>
-                
+
                 <div class="achievement-card">
                     <div class="achievement-icon">
                         <i class="fas fa-users"></i>
@@ -469,7 +542,7 @@
                     <h3>Bachelor of Computer Science Society (BASCO)</h3>
                     <p class="achievement-date">2022 - 2025</p>
                     <p>
-                        Active member participating in diverse events for more than 200 society members, 
+                        Active member participating in diverse events for more than 200 society members,
                         including workshops, sports day and networking sessions.
                     </p>
                     <span class="achievement-category">UiTM Tapah</span>
@@ -485,8 +558,8 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <p class="contact-description">
-                        I'm currently working as an AI/RPA Intern at TP Malaysia and seeking opportunities 
-                        as a Software/Web/Mobile Developer or AI and Automation Engineer. Feel free to reach 
+                        I'm currently working as an AI/RPA Intern at TP Malaysia and seeking opportunities
+                        as a Software/Web/Mobile Developer or AI and Automation Engineer. Feel free to reach
                         out if you'd like to discuss potential collaborations or opportunities.
                     </p>
                     <div class="contact-details">
@@ -541,7 +614,8 @@
                     <a href="mailto:muhdwaiz200@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/muhamad-waiz-syazwan-bin-abdul-manap-3a2420237" class="social-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/muhamad-waiz-syazwan-bin-abdul-manap-3a2420237"
+                        class="social-link" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/SyazWak" class="social-link" target="_blank">
@@ -554,4 +628,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
