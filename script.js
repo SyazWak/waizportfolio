@@ -67,11 +67,13 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+        navbar.style.background = 'rgba(10, 10, 12, 0.98)';
+        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+        navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.4)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        navbar.style.background = 'rgba(10, 10, 12, 0.8)';
+        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.08)';
+        navbar.style.boxShadow = 'none';
     }
 });
 
@@ -202,7 +204,7 @@ function showLoadingAnimation() {
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: #050505;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -215,13 +217,13 @@ function showLoadingAnimation() {
             <div style="
                 width: 50px;
                 height: 50px;
-                border: 5px solid #f3f3f3;
-                border-top: 5px solid #3498db;
+                border: 5px solid rgba(255, 255, 255, 0.05);
+                border-top: 5px solid #6366f1;
                 border-radius: 50%;
                 animation: spin 1s linear infinite;
                 margin-bottom: 20px;
             "></div>
-            <p style="color: #3498db; font-weight: 600;">Loading Portfolio...</p>
+            <p style="color: #6366f1; font-weight: 600;">Loading Portfolio...</p>
         </div>
     `;
 
